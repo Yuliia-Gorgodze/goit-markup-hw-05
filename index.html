@@ -17,47 +17,45 @@
 
   <body>
     <!--Шапка сайта-->
-    <header >
-      <div class="conteiner-center header web-container">
-        
-          <div>
-            <nav class="header-nav">
-              <a class="web-tittle" href="./index.html">
-                <span class="web">Web</span> Studio</a
-              >
-              <ul class="nav-container list">
-                <li class="nav-element">
-                  <a href="./index.html" class="current link">Студия</a>
-                </li>
-                <li class="nav-element">
-                  <a href="./portfolio.html" class="link">Портфолио</a>
-                </li>
-                <li class="nav-element">
-                  <a href="" class="link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <ul class="contacts-conteiner">
-            <li class="mail-container">
-              <a  href="mailto:info@devstudio.com" class="contact ">
-                <svg class="e-mail" >
-                  <use href="./img/sprite.svg#icon-e-mail"></use>
-                </svg>
-              info@devstudio.com</a
-              >
+    <div class="conteiner-center  web-container">
+    
+      <div>
+        <nav class="header-nav">
+          <a class="web-tittle" href="./index.html">
+            <span class="web">Web</span> Studio</a>
+          <ul class="nav-container list">
+            
+            <li class="nav-element">
+              <a href="./index.html" class="link current current-link">Студия</a>
             </li>
-            <li>
-              <a href="tel:+380961111111" class="contact nav-element" >
-              <svg class="e-mail">
-                <use href="./img/sprite.svg#icon-kontakt"></use>
-              </svg>
-                +380961111111</a
-              >
+            
+            <li class="nav-element">
+              <a href="./portfolio.html" class="link ">Портфолио</a>
+            </li>
+            <li class="nav-element">
+              <a href="" class="link">Контакты</a>
             </li>
           </ul>
-        
+        </nav>
       </div>
+      <ul class="contacts-conteiner">
+        <li class="mail-container">
+          <a href="mailto:info@devstudio.com" class="contact ">
+            <svg class="e-mail">
+              <use href="./img/sprite.svg#icon-e-mail"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="contact nav-element">
+            <svg class="e-mail">
+              <use href="./img/sprite.svg#icon-kontakt"></use>
+            </svg>
+            +380961111111</a>
+        </li>
+      </ul>
+    
+    </div>
     </header>
     <main>
       <!--эфективные решения-->
@@ -68,7 +66,17 @@
             для вашего бизнеса
           </h1>
           <div class="caption">
-            <a class="hero-button" href="">Заказать услугу</a>
+            <button data-modal-open class="hero-button" href="">Заказать услугу</button> 
+            <div data-modal class="backdrop is-hidden">
+              <div class="modal">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus laudantium facere sunt accusantium
+                  debitis voluptatibus deserunt, distinctio, maxime, repellat excepturi. Quas autem sed blanditiis doloremque vel
+                  quia quasi suscipit?</p>
+                <button data-modal-close class="clouse">
+                  закрыть окно
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -143,36 +151,38 @@
         <div >
           <ul class="employtment">
             
-            <div class="employtment-conteiner"><li>
+            <div class="employtment-conteiner">
+              <li>
               <img
                 class="pictures-svg"
-                src="./img/comp-one.jpg"
+                src="./img/deskop.jpg"
                 alt="дескопные приложения"
                 width="370"
               />
-              <p class="title">Дескопные приложения</p>
-            </li>
+              <p class="title-employment">Дескопные приложения</p>
             </div>
+            </li>
+            
             <div class="employtment-conteiner">
             <li>
               <img
                 class="pictures-svg"
-                src="./img/tel.jpg"
+                src="./img/mobil.jpg"
                 alt="мобильные приложения"
                 width="370"
               />
-              <p class="title">Мобильные приложения</p>
+              <p class="title-employment">Мобильные приложения</p>
             </li>
             </div>
            <div class="employtment-conteiner">
             <li>
               <img
                 class="pictures-svg"
-                src="./img/comp-two.jpg"
+                src="./img/disayn.jpg"
                 alt="дизайнерские решения"
                 width="370"
               />
-              <p class="title">Дизайнерские решения</p>
+              <p class="title-employment">Дизайнерские решения</p>
             </li>
            </div>
        </div>
@@ -188,8 +198,8 @@
           
           <li class="our-content">
               <div class="our-element" >
-            <img src="./img/nikolai.jpg" alt="nikolai" width="270" />
-            <h3 class="contents">Николай Кучеренко</h3>
+            <img src="./img/igor.jpg" alt="nikolai" width="270" />
+            <h3 class="contents">Игорь Демьяненко</h3>
             <p class="text-contents">Product Designer</p>
              </div>
             <ul class="social">
@@ -218,7 +228,7 @@
           <li class="our-content">
             <div class="our-element">
             <img src="./img/olga.jpg" alt="olga" width="270" />
-            <h3 class="contents">Ольга Иванова</h3>
+            <h3 class="contents">Ольга Репина</h3>
             <p class="text-contents">Frontend Developer</p>
             </div>
             <ul class="social">
@@ -246,8 +256,8 @@
           </li>
           <li class="our-content">
             <div class="our-element">
-            <img src="./img/andrei.jpg" alt="andrei" width="270" />
-            <h3 class="contents">Андрей Шевченко</h3>
+            <img src="./img/nikolai.jpg" alt="andrei" width="270" />
+            <h3 class="contents">Николай Тарасов</h3>
             <p class="text-contents">Marketing</p>
             </div>
             <ul class="social">
@@ -275,8 +285,8 @@
           </li>
           <li class="our-content">
             <div class="our-element">
-            <img src="./img/ivan.jpg" alt="ivan" width="270" />
-            <h3 class="contents">Иван Николаев</h3>
+            <img src="./img/mihail.jpg" alt="ivan" width="270" />
+            <h3 class="contents">Михаил Ермаков</h3>
             <p class="text-contents">UI Designer</p>
             </div>
             <ul class="social">
@@ -410,5 +420,7 @@
       </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    
   </body>
 </html>
